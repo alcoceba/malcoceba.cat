@@ -1,0 +1,10 @@
+@import './vars';
+@import './reset';
+
+html, body {
+  height: 100%;
+  font-family: $font-family;
+  text-align: center;
+  background: $main-color-2;
+  color: $main-color-1;
+}

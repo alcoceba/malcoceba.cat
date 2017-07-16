@@ -1,0 +1,33 @@
+@import "../../assets/styles/scss/base";
+
+.title-wrapper {
+  position: relative;
+  opacity: 0;
+  top: -40px;
+
+  h1 {
+    font-size: 25px;
+    font-weight: normal;
+    color: $main-color-1;
+  }
+
+  span {
+    font-size: 13px;
+    color: $main-color-3;
+  }
+}
+
+.border {
+  opacity: 0;
+  width: 0;
+  margin-top: 10px;
+  border-bottom: 1px solid $main-color-1;
+}
+
+@media (max-width: 767px) {
+
+  .title-wrapper {
+    padding: 0 10px 10px;
+    text-align: center;
+  }
+}

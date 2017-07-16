@@ -1,0 +1,22 @@
+@import "../../assets/styles/scss/base";
+
+.container-about {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+
+  .container-about-wrapper {
+
+    position: relative;
+    top: -60px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: right;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
