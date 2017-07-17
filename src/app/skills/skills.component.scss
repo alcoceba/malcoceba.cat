@@ -20,8 +20,11 @@ ul {
     .fa {
 
       &.fa-heart-o, &.fa.fa-star-o {
-        //margin-right: px;
         transition: color 250ms ease-in;
+      }
+
+      &.fa-flipping-constant {
+        animation: flipping 1s infinite linear;
       }
 
       &.fa-rocket {
@@ -66,3 +69,7 @@ ul {
   }
 }
 
+@keyframes flipping {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(360deg);}
+}
