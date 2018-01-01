@@ -1,7 +1,4 @@
-@import "../../scss/base";
-
 footer {
-
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -20,14 +17,28 @@ footer {
         cursor: pointer;
       }
 
+      a:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        margin: 5px auto 0;
+        background: $main-color-1;
+        transition: width 0.3s ease-in-out;
+      }
+
       a:hover {
         color: $main-color-1;
         transition: none;
+
+        &:after {
+          width: 100%;
+        }
       }
     }
 
     li:after {
-      content: " · "
+      content: " · ";
     }
 
     li:last-child:after {

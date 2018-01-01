@@ -1,0 +1,19 @@
+@import './common/vars';
+@import './common/reset';
+
+@import './components/titles';
+@import './components/skills';
+@import './components/footer';
+
+
+html, body {
+  height: 100%;
+  font-family: $font-family;
+  text-align: center;
+  background: $main-color-2;
+  color: $main-color-1;
+}
+
+.container {
+  height:100%;
+}
