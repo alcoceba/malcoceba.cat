@@ -6,43 +6,33 @@ footer {
   font-size: 13px;
   text-align: center;
 
-  ul {
-    li {
-      display: inline-block;
+  a {
+    position: relative;
+    color: $main-color-3;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
 
-      a {
-        color: $main-color-3;
-        text-decoration: none;
-        transition: color 0.3s ease-in-out;
-        cursor: pointer;
-      }
+  a:after {
+    opacity: 0.1;
+    content: " ";
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    margin: 5px auto 0;
+    background-color: $main-color-3;
+    transition: all 0.2s ease-in-out;
+  }
 
-      a:after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 1px;
-        margin: 5px auto 0;
-        background: $main-color-1;
-        transition: width 0.3s ease-in-out;
-      }
-
-      a:hover {
-        color: $main-color-1;
-        transition: none;
-
-        &:after {
-          width: 100%;
-        }
-      }
-    }
-
-    li:after {
-      content: " · ";
-    }
-
-    li:last-child:after {
-      content: "";
+  a:hover {
+    &:after {
+      width: 100%;
+      opacity: 1;
     }
   }
 }

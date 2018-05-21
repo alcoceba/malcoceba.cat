@@ -1,0 +1,23 @@
+$duration: 500ms;
+
+.animate {
+
+  .title-wrapper {
+    right: 0;
+    opacity: 1;
+    transition: all $duration ease-out;
+  }
+
+  .avatar,
+  .description {
+    left: 10px;
+    opacity: 1;
+    transition: all $duration ease-out;
+  }
+
+  .border {
+    width: 100%;
+    opacity: 1;
+    transition: all $duration ease-out;
+  }
+}

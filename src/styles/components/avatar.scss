@@ -1,0 +1,19 @@
+
+.avatar {
+  position: absolute;
+  top: -22px;
+  left: -10px;
+  opacity: 0;
+  
+  img {
+  	width: 65px;
+	}
+}
+
+@media (max-width: 767px) {
+	.avatar {
+		img {
+	    visibility: hidden;
+		}
+	}
+}
