@@ -4,30 +4,23 @@
   "description": "Manel Alcoceba website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "webpack-dev-server --open --mode development",
+    "build:test": "webpack --config webpack.config.js --env.NODE_ENV=development",
+    "build:prod": "webpack --config webpack.config.js --env.NODE_ENV=production"
   },
-  "author": "Manel Alcoceba <manelalcoceba@gmail.com> (http://malcoceba.cat)",
+  "keywords": ["personal","page","developer"],
+  "author": "Manel Alcoceba",
   "license": "ISC",
   "devDependencies": {
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-cache": "^1.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-jshint": "^2.1.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^2.1.1",
-    "gulp-uglify": "^3.0.0",
-    "jshint": "^2.9.5"
-  },
-  "jshintConfig": {
-    "undef": true,
-    "unused": true
-  },
-  "dependencies": {
-    "jquery": "^3.2.1"
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
