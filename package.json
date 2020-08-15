@@ -8,7 +8,11 @@
     "build:test": "webpack --config webpack.config.js --env.NODE_ENV=development",
     "build:prod": "webpack --config webpack.config.js --env.NODE_ENV=production"
   },
-  "keywords": ["personal","page","developer"],
+  "keywords": [
+    "personal",
+    "page",
+    "developer"
+  ],
   "author": "Manel Alcoceba",
   "license": "ISC",
   "devDependencies": {
@@ -21,6 +25,6 @@
     "sass-loader": "^8.0.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.11.0"
   }
 }
