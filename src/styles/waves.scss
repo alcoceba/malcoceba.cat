@@ -12,7 +12,9 @@ $wave-color: #01df74;
   .waveing > use {
 
     animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-    fill: $wave-color;
+    fill: transparent;
+    stroke: $wave-color;
+    stroke-width: .3;
     transition: fill .25s ease-in;
 
     &:nth-child(1) {
@@ -25,7 +27,7 @@ $wave-color: #01df74;
       animation-delay: -3s;
       animation-duration: 10s;
       opacity: .5;
-      fill: $yellow;
+      stroke: $yellow;
     }
 
     &:nth-child(3) {
@@ -37,12 +39,6 @@ $wave-color: #01df74;
     &:nth-child(4) {
       animation-delay: -5s;
       animation-duration: 20s;
-    }
-  }
-
-  &:hover, &:focus {
-    .waveing > use {
-      fill: $yellow;
     }
   }
 }
